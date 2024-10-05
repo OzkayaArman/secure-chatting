@@ -70,7 +70,8 @@ Identify‬
 ‭ of IP’s that are known to be of malicious sources and they are not allowed to be connected to the server. Moreover, the‬
 ‭ firewall has a rate limiting policy where in order for a connection to be allowed, the last connection should have been‬
 ‭ made at least 0.5 seconds ago. This is done in order to prevent DDOS attacks. The firewall also has a logic where it‬
-‭ doesn’t allow more than 10 connections per an IP address to prevent a DOS attack.‬
+‭ doesn’t allow more than 10 connections per an IP address to prevent a DOS attack.‬  
+
 ‭ 
 Respond‬  
 
@@ -79,7 +80,8 @@ Respond‬
 ‭ what is going on in the discussion platform. To realize this goal, I made sure newly joined users don’t have access to‬
 ‭ previous chats, or who is on the server which is part of our anonymity policy. If users don’t recognize A warning message‬
 ‭ is broadcasted to all users in the discussion group when a new client joins the group along with the username , and if users‬
-‭ don’t recognize this username, they can choose to end their connections and participate in that discussion no more.‬
+‭ don’t recognize this username, they can choose to end their connections and participate in that discussion no more.‬  
+
 ‭ 
 Recover‬  
 
