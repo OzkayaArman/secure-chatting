@@ -42,7 +42,9 @@ Identify‬
 ‭ impersonation, and denial of service attacks. In the next section we discuss how we can protect our system against these‬
 ‭ attacks.‬
 
-‭ Detect‬
+  
+‭ Detect  
+‬
 ‭ Cryptography is vital for detecting anomalies in an exchange. I use the TLS security mechanism in order to address the security‬
 ‭ concerns of communication security. It achieves confidentiality by hiding the data through a tunnelling mechanism so that‬
 ‭ attackers can’t read the content of the message or the communication details of the message. It also provides authentication to‬
@@ -50,7 +52,8 @@ Identify‬
 ‭ real application this can be exchanged with a CA signed certificate. It also provides integrity guarantees as it detects any‬
 ‭ tampering of data took place.
 
-‭ Protect‬
+‭ Protect  
+‬
 ‭ In order to protect the users of the system, we put them in charge. That is to say that the server isn’t capable of seeing any‬
 ‭ messages as they will be encrypted. The keys are exchanged directly between users in band, again through a SSLSocket‬
 ‭ as we don’t want any attacker from being able to snatch the keys off the wire. The in-band key management system‬
@@ -69,7 +72,8 @@ Identify‬
 ‭ made at least 0.5 seconds ago. This is done in order to prevent DDOS attacks. The firewall also has a logic where it‬
 ‭ doesn’t allow more than 10 connections per an IP address to prevent a DOS attack.‬
 ‭ 
-Respond‬
+Respond‬  
+
 ‭ The users, if they feel compromised, can respond to any sense of danger by terminating their connection because the‬
 ‭ system only works on a single session basis. No chat data is stored. Therefore my aim was to increase user awareness of‬
 ‭ what is going on in the discussion platform. To realize this goal, I made sure newly joined users don’t have access to‬
@@ -77,7 +81,8 @@ Respond‬
 ‭ is broadcasted to all users in the discussion group when a new client joins the group along with the username , and if users‬
 ‭ don’t recognize this username, they can choose to end their connections and participate in that discussion no more.‬
 ‭ 
-Recover‬
+Recover‬  
+
 ‭ If an attack is detected, our policy would be to switch to another similar system (assuming it exists) which uses different‬
 ‭ but robust security mechanisms until the pathway of the latest attack is determined and blocked through additional‬
 ‭ countermeasures. Then, the system can be re-deployed after necessary changes have been made.‬
