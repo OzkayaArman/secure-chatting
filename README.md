@@ -1,6 +1,7 @@
 ‬
-‭ Threat Model and NIST’S Five Functions‬
-‭ Identify‬
+Threat Model and NIST’S Five Functions‬
+‭ 
+Identify‬
 ‭ I started my code development process by identifying what are the assets I want to protect, identify how an attack can be‬
 ‭ mounted, and identify policies related to securing this discussion platform.‬
 ‭ To begin with, in order to be able to identify the assets, it was important to consider the system architecture I wanted to‬
@@ -66,14 +67,16 @@
 ‭ firewall has a rate limiting policy where in order for a connection to be allowed, the last connection should have been‬
 ‭ made at least 0.5 seconds ago. This is done in order to prevent DDOS attacks. The firewall also has a logic where it‬
 ‭ doesn’t allow more than 10 connections per an IP address to prevent a DOS attack.‬
-‭ Respond‬
+‭ 
+Respond‬
 ‭ The users, if they feel compromised, can respond to any sense of danger by terminating their connection because the‬
 ‭ system only works on a single session basis. No chat data is stored. Therefore my aim was to increase user awareness of‬
 ‭ what is going on in the discussion platform. To realize this goal, I made sure newly joined users don’t have access to‬
 ‭ previous chats, or who is on the server which is part of our anonymity policy. If users don’t recognize A warning message‬
 ‭ is broadcasted to all users in the discussion group when a new client joins the group along with the username , and if users‬
 ‭ don’t recognize this username, they can choose to end their connections and participate in that discussion no more.‬
-‭ Recover‬
+‭ 
+Recover‬
 ‭ If an attack is detected, our policy would be to switch to another similar system (assuming it exists) which uses different‬
 ‭ but robust security mechanisms until the pathway of the latest attack is determined and blocked through additional‬
 ‭ countermeasures. Then, the system can be re-deployed after necessary changes have been made.‬
